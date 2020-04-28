@@ -39,7 +39,6 @@ def start_game():
 def play_with_numbers():
     global bull, user_win, cow
     number_sequence = generate_numbers()
-    print(number_sequence)
 
     while not user_win:
         user_input = input("Make a guess: ")
@@ -76,7 +75,7 @@ def play_with_numbers():
 def play_with_letters():
     global bull, user_win, cow
     letter_sequence = generate_letters()
-    print(letter_sequence)
+    
     # reset the count for every try
     bull = 0
     cow = 0
